@@ -1,3 +1,5 @@
 * {
   font-family: "Inter", sans-serif;
 }
+/* tailwind autosuggestion */
+@import "tailwindcss";

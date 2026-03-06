@@ -35,6 +35,273 @@
     />
   </head>
   <body>
+    <!-- header -->
+    <header class="w-full shadow-sm bg-[#15803D] sticky top-0 z-10">
+      <div class="navbar bg-base-100 w-11/12 mx-auto bg-[#15803D]">
+        <div class="navbar-start gap-4">
+          <div class="dropdown cursor-pointer">
+            <div tabindex="0" role="button" class="lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a>About</a></li>
+              <li><a>Gallery</a></li>
+              <li><a>Plant a Tree</a></li>
+            </ul>
+          </div>
+          <a class="bg- text-xl cursor-pointer font-semibold text-white"
+            >Green Earth</a
+          >
+        </div>
+        <div
+          class="navbar-center hidden lg:flex text-white font-medium text-[16px]"
+        >
+          <ul class="menu menu-horizontal px-1">
+            <li><a>About</a></li>
+            <li><a>Gallery</a></li>
+            <li><a>Plant a Tree</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="bg-[#FACC15] text-[#15803D] rounded-3xl shadow border-0 font-medium text-[16px] py-1.5 px-4 cursor-pointer"
+          >
+            Plant a Tree
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- main  -->
+    <main class="bg-[#F0FDF4]">
+      <!-- banner/hero-section -->
+      <section class="hero-section bg-[#CFF0DC]">
+        <div class="flex w-full mx-auto justify-between">
+          <!-- leaf left section -->
+          <div class="max-w-[546px]">
+            <img src="assets/hero-leaf1.png" alt="Leaf-Photo" />
+          </div>
+          <!-- Plant a tree, grow a feature section -->
+          <div class="flex flex-col justify-center items-center">
+            <h1
+              class="font-bold text-[15px] sm:text-[17px] md:text-[23px] lg:text-[35px] text-center mb-2"
+            >
+              Plant a Tree, Grow a Future
+            </h1>
+            <p
+              class="font-normal text-[12px] lg:text-4 text-[#1F2937] text-center mb-6"
+            >
+              Join our mission to plant 1 million trees and make the Earth
+              greener for future generations.
+            </p>
+            <button
+              class="bg-[#FACC15] text-[#15803D] rounded-3xl shadow border-0 font-medium text-[16px] py-1.5 px-4 cursor-pointer"
+            >
+              Get Involved
+            </button>
+          </div>
+          <!-- leaf right section -->
+          <div class="max-w-[546px]">
+            <img src="assets/hero-leaf2.png" alt="Leaf-Photo" />
+          </div>
+        </div>
+      </section>
+      <!-- product section -->
+      <section class="w-11/12 mx-auto md:mt-[50px]">
+        <!-- product title -->
+        <h2
+          class="flex justify-center items-center text-center font-semibold text-[22px] mb-[40px]"
+        >
+          Choose Your Trees
+        </h2>
+        <!-- products container -->
+        <div class="flex gap-4 mx-auto">
+          <!-- left section -->
+          <div
+            class="flex flex-col justify-start items-start w-1/6 rounded-3xl"
+          >
+            <h3 class="font-semibold text-5">Categorize</h3>
+            <ul class="rounded-box z-1 w-full">
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="">All Trees</a>
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white">Fruit Trees</a>
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white"
+                  >Flowering Trees</a
+                >
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white">Shade Trees</a>
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white"
+                  >Medicinal Trees</a
+                >
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white">Timber Trees</a>
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white"
+                  >Evergreen Trees</a
+                >
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white"
+                  >Ornamental Plants</a
+                >
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white">Bamboo</a>
+              </li>
+              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
+                <a class="hover:bg-[#15803D] hover:text-white">Climbers</a>
+              </li>
+            </ul>
+          </div>
+          <!-- middle section -->
+          <!-- card container -->
+          <div
+            class="card-container w-3/4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start rounded-3xl md:gap-5 mx-auto"
+          >
+            <!-- card -->
+            <div
+              class="card max-w-[330px] p-4 flex flex-col items-center shadow-md bg-white"
+            >
+              <img src="" alt="" />
+              <!-- card details -->
+              <div>
+                <h4 class="font-semibold text-5 mb-3">Card Name</h4>
+                <p
+                  class="flex justify-center items-center text-[12px] font-normal text-[#1F2937] mb-3"
+                >
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <!-- price and type -->
+                <div class="flex justify-between items-center mb-4">
+                  <button
+                    class="py-1 px-4 text-[#15803D] bg-[#DCFCE7] font-medium text-4 rounded-2xl cursor-pointer flex justify-center items-center"
+                  >
+                    type
+                  </button>
+                  <p class="font-bold cursor-pointer">$999</p>
+                </div>
+                <!-- show it when add to cart is clicked -->
+                <p class="hidden">Added</p>
+                <button
+                  class="bg-[#15803D] text-white font-medium text-4 py-3 w-full rounded-3xl cursor-pointer hover:bg-green-600"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div
+              class="card max-w-[330px] p-4 flex flex-col items-center shadow-md bg-white"
+            >
+              <img src="" alt="" />
+              <!-- card details -->
+              <div>
+                <h4 class="font-semibold text-5 mb-3">Card Name</h4>
+                <p
+                  class="flex justify-center items-center text-[12px] font-normal text-[#1F2937] mb-3"
+                >
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <!-- price and type -->
+                <div class="flex justify-between items-center mb-4">
+                  <button
+                    class="py-1 px-4 text-[#15803D] bg-[#DCFCE7] font-medium text-4 rounded-2xl cursor-pointer flex justify-center items-center"
+                  >
+                    type
+                  </button>
+                  <p class="font-bold cursor-pointer">$999</p>
+                </div>
+                <!-- show it when add to cart is clicked -->
+                <p class="hidden">Added</p>
+                <button
+                  class="bg-[#15803D] text-white font-medium text-4 py-3 w-full rounded-3xl cursor-pointer hover:bg-green-600"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div
+              class="card max-w-[330px] p-4 flex flex-col items-center shadow-md bg-white"
+            >
+              <img src="" alt="" />
+              <!-- card details -->
+              <div>
+                <h4 class="font-semibold text-5 mb-3">Card Name</h4>
+                <p
+                  class="flex justify-center items-center text-[12px] font-normal text-[#1F2937] mb-3"
+                >
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
+                </p>
+                <!-- price and type -->
+                <div class="flex justify-between items-center mb-4">
+                  <button
+                    class="py-1 px-4 text-[#15803D] bg-[#DCFCE7] font-medium text-4 rounded-2xl cursor-pointer flex justify-center items-center"
+                  >
+                    type
+                  </button>
+                  <p class="font-bold cursor-pointer">$999</p>
+                </div>
+                <!-- show it when add to cart is clicked -->
+                <p class="hidden">Added</p>
+                <button
+                  class="bg-[#15803D] text-white font-medium text-4 py-3 w-full rounded-3xl cursor-pointer hover:bg-green-600"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- right section -->
+          <div class="w-1/4 p-4 bg-white rounded-3xl">
+            <h4 class="font-semibold text-[18px] mb-2">Your Cart</h4>
+            <!-- item card in basket -->
+            <!-- basket-card-container -->
+            <div class="basket-card-container flex flex-col justify-start">
+              <!-- basket-card -->
+              <div
+                class="basket-card p-2 flex justify-between items-center bg-[#F0FDF4] rounded-md"
+              >
+                <div>
+                  <h5 class="font-semibold text-5 mb-2">Tree Name</h5>
+                  <p class="text-4 font-normal">£Price</p>
+                </div>
+                <!-- delete button -->
+                <button>
+                  <i class="fa-regular fa-trash-can cursor-pointer"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Script -->
     <script src="script/home.js"></script>
   </body>
 </html>
