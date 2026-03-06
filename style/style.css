@@ -3,3 +3,6 @@
 }
 /* tailwind autosuggestion */
 @import "tailwindcss";
+.active {
+  display: none;
+}

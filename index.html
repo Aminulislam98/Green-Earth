@@ -129,178 +129,83 @@
         >
           Choose Your Trees
         </h2>
+        <!-- snipper for card -->
+        <div id="snipperCard" class="flex justify-center items-center active">
+          <span class="loading loading-dots loading-xl"></span>
+        </div>
+
         <!-- products container -->
         <div class="flex gap-4 mx-auto">
           <!-- left section -->
           <div
             class="flex flex-col justify-start items-start w-1/6 rounded-3xl"
           >
-            <h3 class="font-semibold text-5">Categorize</h3>
-            <ul class="rounded-box z-1 w-full">
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="">All Trees</a>
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white">Fruit Trees</a>
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white"
-                  >Flowering Trees</a
-                >
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white">Shade Trees</a>
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white"
-                  >Medicinal Trees</a
-                >
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white">Timber Trees</a>
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white"
-                  >Evergreen Trees</a
-                >
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white"
-                  >Ornamental Plants</a
-                >
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white">Bamboo</a>
-              </li>
-              <li class="w-full hover:bg-[#15803D] hover:text-white rounded">
-                <a class="hover:bg-[#15803D] hover:text-white">Climbers</a>
-              </li>
-            </ul>
+            <h3 class="font-semibold text-5 mb-2">Categorize</h3>
+            <h3
+              id="snipperAllCategories"
+              class="font-semibold text-5 mb-2"
+            ></h3>
+            <li
+              class="categoryButton w-full bg-gray-200 rounded cursor-pointer py-1 px-2 list-none"
+            >
+              <a class="block">All Trees</a>
+            </li>
+            <ul id="categories" class="rounded-box z-1 w-full space-y-1"></ul>
           </div>
           <!-- middle section -->
           <!-- card container -->
           <div
+            id="cardContainer"
             class="card-container w-3/4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start rounded-3xl md:gap-5 mx-auto"
           >
-            <!-- card -->
-            <div
-              class="card max-w-[330px] p-4 flex flex-col items-center shadow-md bg-white"
-            >
-              <img src="" alt="" />
-              <!-- card details -->
-              <div>
-                <h4 class="font-semibold text-5 mb-3">Card Name</h4>
-                <p
-                  class="flex justify-center items-center text-[12px] font-normal text-[#1F2937] mb-3"
-                >
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <!-- price and type -->
-                <div class="flex justify-between items-center mb-4">
-                  <button
-                    class="py-1 px-4 text-[#15803D] bg-[#DCFCE7] font-medium text-4 rounded-2xl cursor-pointer flex justify-center items-center"
-                  >
-                    type
-                  </button>
-                  <p class="font-bold cursor-pointer">$999</p>
-                </div>
-                <!-- show it when add to cart is clicked -->
-                <p class="hidden">Added</p>
-                <button
-                  class="bg-[#15803D] text-white font-medium text-4 py-3 w-full rounded-3xl cursor-pointer hover:bg-green-600"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="card max-w-[330px] p-4 flex flex-col items-center shadow-md bg-white"
-            >
-              <img src="" alt="" />
-              <!-- card details -->
-              <div>
-                <h4 class="font-semibold text-5 mb-3">Card Name</h4>
-                <p
-                  class="flex justify-center items-center text-[12px] font-normal text-[#1F2937] mb-3"
-                >
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <!-- price and type -->
-                <div class="flex justify-between items-center mb-4">
-                  <button
-                    class="py-1 px-4 text-[#15803D] bg-[#DCFCE7] font-medium text-4 rounded-2xl cursor-pointer flex justify-center items-center"
-                  >
-                    type
-                  </button>
-                  <p class="font-bold cursor-pointer">$999</p>
-                </div>
-                <!-- show it when add to cart is clicked -->
-                <p class="hidden">Added</p>
-                <button
-                  class="bg-[#15803D] text-white font-medium text-4 py-3 w-full rounded-3xl cursor-pointer hover:bg-green-600"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div
-              class="card max-w-[330px] p-4 flex flex-col items-center shadow-md bg-white"
-            >
-              <img src="" alt="" />
-              <!-- card details -->
-              <div>
-                <h4 class="font-semibold text-5 mb-3">Card Name</h4>
-                <p
-                  class="flex justify-center items-center text-[12px] font-normal text-[#1F2937] mb-3"
-                >
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <!-- price and type -->
-                <div class="flex justify-between items-center mb-4">
-                  <button
-                    class="py-1 px-4 text-[#15803D] bg-[#DCFCE7] font-medium text-4 rounded-2xl cursor-pointer flex justify-center items-center"
-                  >
-                    type
-                  </button>
-                  <p class="font-bold cursor-pointer">$999</p>
-                </div>
-                <!-- show it when add to cart is clicked -->
-                <p class="hidden">Added</p>
-                <button
-                  class="bg-[#15803D] text-white font-medium text-4 py-3 w-full rounded-3xl cursor-pointer hover:bg-green-600"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
+            <!-- rendering by js -->
           </div>
           <!-- right section -->
           <div class="w-1/4 p-4 bg-white rounded-3xl">
-            <h4 class="font-semibold text-[18px] mb-2">Your Cart</h4>
-            <!-- item card in basket -->
-            <!-- basket-card-container -->
-            <div class="basket-card-container flex flex-col justify-start">
-              <!-- basket-card -->
-              <div
-                class="basket-card p-2 flex justify-between items-center bg-[#F0FDF4] rounded-md"
-              >
-                <div>
-                  <h5 class="font-semibold text-5 mb-2">Tree Name</h5>
-                  <p class="text-4 font-normal">£Price</p>
-                </div>
-                <!-- delete button -->
-                <button>
-                  <i class="fa-regular fa-trash-can cursor-pointer"></i>
-                </button>
+            <div id="basket" class="hidden">
+              <div class="flex justify-between items-center mb-4">
+                <h4 class="font-semibold text-[18px]">Your Cart</h4>
+                <p class="font-semibold text-[18px]">
+                  Total Items: <span id="cartLength">0</span>
+                </p>
               </div>
+
+              <!-- item card in basket -->
+              <!-- basket-card-container -->
+              <div
+                id="basketCartContainer"
+                class="basket-card-container flex flex-col justify-start space-y-2"
+              >
+                <!-- basket-card js will show here -->
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <p class="font-bold text-green-600">Total Cost:</p>
+                <p class="font-bold text-green-600" id="totalCost"></p>
+              </div>
+            </div>
+            <div
+              id="empty"
+              class="flex justify-center items-center mt-5 font-bold text-red-600 hidden"
+            >
+              <p>Your Cart is Empty(0)</p>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <!-- modal for show card details  -->
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="modalForCardDetails" class="modal">
+      <div class="modal-box">
+        <div id="showCardDetail"></div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
     <!-- Script -->
     <script src="script/home.js"></script>
   </body>
